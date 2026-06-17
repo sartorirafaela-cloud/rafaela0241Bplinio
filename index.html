@@ -1,4 +1,6 @@
+Aqui está o código HTML atualizado. O vídeo foi incorporado dentro de uma nova seção e centralizado usando CSS para que a página continue com um visual limpo e organizado.
 
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -46,6 +48,15 @@
             background-color: #f2f2f2;
             color: #6b8e23;
         }
+        /* Estilo para centralizar o vídeo e deixá-lo responsivo */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            background-color: #fdfdfd;
+            padding: 10px;
+            border-radius: 8px;
+        }
         footer {
             text-align: center;
             margin-top: 40px;
@@ -65,6 +76,14 @@
         <section>
             <h2>Sobre as Flores</h2>
             <p>As flores vão muito além da beleza visual. Elas desempenham um papel vital na reprodução das plantas e, ao longo da história humana, têm sido usadas para expressar sentimentos, celebrar momentos especiais e decorar nossos ambientes.</p>
+        </section>
+
+        <section>
+            <h2>Vídeo: Conhecendo Mais sobre a Natureza</h2>
+            <p>Assista ao vídeo abaixo para se inspirar ainda mais com o mundo das flores e das plantas:</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/x8ChzTnyYuA?si=i-8NT5pPIwiS9yye" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </section>
 
         <section>
@@ -111,3 +130,11 @@
 
 </body>
 </html>
+
+```
+
+### O que mudou:
+
+* **Nova Seção**: Foi criada uma `<section>` específica para o vídeo logo após a introdução.
+* **Contêiner do Vídeo**: O `<iframe>` foi envolvido em uma `<div>` com a classe `video-container`.
+* **Centralização**: Adicionei um pequeno bloco de CSS para garantir que o reprodutor do YouTube fique centralizado na tela de forma harmônica.
